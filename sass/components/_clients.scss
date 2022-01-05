@@ -1,0 +1,105 @@
+.clients{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: 1200px)  {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    }
+}
+
+.clients-list__clients{
+font-weight: bold;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+color: var(--header-text-color);
+}
+
+.clients-list__clients-list{
+  // display: flex;
+  margin-left: auto;
+  @media screen and (min-width: 480px){
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
+    @media screen and (min-width: 768px){
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
+    @media screen and (min-width: 1200px){
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -30px;
+    }
+    // }
+    // img {
+    //     width: 100%;
+    // }
+margin-bottom: -30px;
+}
+
+.clients-list__clients-link{
+  @media screen and (min-width: 1200px) {
+width: 170px;
+  }
+width: 100%;
+height: 92px;
+border: 1px solid #AFB1B8;
+box-sizing: border-box;
+border-radius:4px;
+fill:#AFB1B8;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 16px 32px 16px 32px;
+outline: none;
+transition: border 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus{
+   border: 1px solid#2196F3;
+}
+}
+
+.clients-list__clients-icon{
+transition: fill 250ms;
+transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+.clients-list__clients-link:hover &,
+.clients-list__clients-link:focus &,
+.current{
+  fill:#2196F3;
+}
+}
+
+.clients-list__clients-item{
+// display: flex;
+// flex-wrap: wrap;
+// justify-content: center;
+@media screen and (min-width: 480px){
+          flex-basis: calc(100% / 2 - 30px);
+          margin-left: 30px;
+          margin-bottom: 30px;
+      }
+@media screen and (min-width: 768px){
+          flex-basis: calc(100% / 3 - 30px);
+          margin-left: 30px;
+          margin-bottom: 30px;
+      }
+@media screen and (min-width: 1200px){
+          flex-basis: calc(100% / 6 - 30px);
+          margin-left: 30px;
+// align-items: center;
+// &:not(:last-child){
+//   margin-right: 30px;
+// }
+  // img {
+  //       width: 100%;
+  //   }
+}
+// align-items: center;
+// display: flex;
+}
