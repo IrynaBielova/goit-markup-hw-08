@@ -9,6 +9,9 @@
 
 .clients-list__clients{
 font-weight: bold;
+@media screen and(max-width: 1199px){
+   font-size: 28px; 
+  }
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
@@ -35,10 +38,6 @@ color: var(--header-text-color);
       flex-wrap: wrap;
       margin-left: -30px;
     }
-    // }
-    // img {
-    //     width: 100%;
-    // }
 margin-bottom: -30px;
 }
 
@@ -76,9 +75,6 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list__clients-item{
-// display: flex;
-// flex-wrap: wrap;
-// justify-content: center;
 @media screen and (min-width: 480px){
           flex-basis: calc(100% / 2 - 30px);
           margin-left: 30px;
@@ -92,14 +88,5 @@ transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 1200px){
           flex-basis: calc(100% / 6 - 30px);
           margin-left: 30px;
-// align-items: center;
-// &:not(:last-child){
-//   margin-right: 30px;
-// }
-  // img {
-  //       width: 100%;
-  //   }
 }
-// align-items: center;
-// display: flex;
 }

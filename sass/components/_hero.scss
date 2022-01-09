@@ -72,6 +72,9 @@ line-height: 1.36;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
+@media screen and (min-width: 480px){
+    margin-bottom: 30px;
+}
 margin-bottom: 45px;
 color: var(--main-title-color);
 }
