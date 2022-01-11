@@ -32,6 +32,9 @@ display: flex;
 @media screen and (min-width: 768px)  {
   margin-left: 88px;
  }
+ @media screen and (min-width: 1200px)  {
+  margin-left: 0px;
+ }
 }
 
 .menu__header-connect-list{
@@ -63,16 +66,18 @@ margin-right: 50px;
 .header-container{
 display: flex;
 align-items: center;
-@media screen and (max-width: 1199px){
-width: 100%;
-}
-// max-width: 1200px;
-@media screen and (min-width: 1200px){
-  padding-left: 15px;
-  padding-right: 15px;
-}
-  padding-left: 15px;
-  padding-right: 15px;
+// width: 100%;
+// @media screen and (max-width: 1199px){
+// width: 100%;
+// }
+// // max-width: 1200px;
+// @media screen and (min-width: 1200px){
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   width: 100%;
+// }
+//   padding-left: 15px;
+//   padding-right: 15px;
 }
 
 .header-connect{
@@ -225,8 +230,10 @@ color: var(--fourth-text-color);
 }
 }
 
-// .mob-menu-connect {
-//     margin-bottom: 64px; 
+// .mob-menu-connect{
+//   &:not(:last-child){
+//     margin-bottom: 32px; 
+//   }
 // }
 
 .mob-menu-tel {
@@ -237,8 +244,8 @@ font-size: 34px;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: #2196F3;
-margin-bottom: 22px;
-margin-top: 314px;
+// margin-bottom: 22px;
+// margin-top: 314px;
 }
 
 .mob-menu-mail{
@@ -249,6 +256,10 @@ font-size: 24px;
 line-height: 1.67;
 letter-spacing: 0.02em;
 color: #757575;
+}
+
+.mob-mail{
+margin-top: 32px;
 }
 
 .mob-social-item{

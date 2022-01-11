@@ -5,17 +5,19 @@
   padding-top: 200px;
   padding-bottom: 200px;
   }
-  background-color: var(--main-bg-color);
-  background-image: linear-gradient(
-  rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4)), 
-  url(../image/header-img_mobile_1x.jpg);
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   max-width: 1600px;
 
+  background-color: var(--main-bg-color);
+  @media screen and (min-width: 480px){
+  background-image: linear-gradient(
+  rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4)), 
+  url(../images/optimiz/header-img_mobile_1x-min.jpg);
+  }
   @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -42,8 +44,8 @@ url(../images/header-img_mobile_2x.jpg);
 }
     }
     @media screen and (min-width: 1200px)  {
-            padding-top: 130px;
-            padding-bottom: 130px;
+            padding-top: 200px;
+            padding-bottom: 200px;
 background-image: 
 linear-gradient(
 rgba(47, 48, 58, 0.4),

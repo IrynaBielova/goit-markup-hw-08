@@ -34,6 +34,11 @@
     img {
         width: 100%;
     }
+    @media screen and (min-width: 480px)  {
+     &:not(:last-child){
+    margin-bottom: 30px; 
+  }
+}
 }
 
 .peculiarities-text__after-title-text{
@@ -66,7 +71,7 @@ display: flex;
 width: 100%;
 align-items: center;
 justify-content: center;
-margin-top: 30px;
+// margin-top: 30px;
 margin-bottom: 30px;
 background-color: #F5F4FA;
 border-radius: 4px;
